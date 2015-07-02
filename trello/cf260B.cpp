@@ -30,21 +30,6 @@ typedef unsigned long long ull;
 
 vi num;
 
-void dec(){
-  int curpos = sz(num) - 1;
-  if(curpos == 0 && num[curpos]==0) return;
-  bool buf = 1;
-  while(buf && curpos >= 0){ 
-    if(num[curpos] > 0){
-       --num[curpos];
-       buf = 0;
-     } 
-     else{
-       num[curpos] = 9;
-       --curpos;
-     } 
-  }
-}
 int getSum(){
   int res = 0;
   forc(i,sz(num))
