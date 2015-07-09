@@ -36,7 +36,7 @@ int step;
 int value;
 
 int rdist;
-vi rvec;
+vi rvec;  
 queue < int > nex; 
 bool fillAge(){
   while(!nex.empty()){
